@@ -1,0 +1,119 @@
+/* Reset shit */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+:focus {
+    outline: 0;
+}
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+ol, ul {
+    list-style: none;
+}
+/*reset stops*/
+html, body { 
+    height:100%;
+    width:100%;
+    /*no scrool */
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    /*So there is no margin for the body */
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    background-image: url("dummyBackground0.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#top{
+	height:15%;
+	width:100%;
+	/*background-color: yellow;*/
+}
+#headerMain {
+	text-align: center;
+	font-family:Monospace;
+}
+#article {
+	height: 80%;
+	width:100%;
+	/*background-color: yellow;*/
+}
+#topArticle{
+	height: 30%;
+	width:100%;
+	/*background-color: blue;*/
+}
+#leftAndRigthArticle {
+	height: 70%;
+	width:100%;
+	display: flex;
+}
+#leftArticle{
+	width:50%;
+	/*background-color: green;*/
+	position: left;
+}
+#rightArticle{
+	flex: 1;
+	width:50%;
+	/*background-color: black;*/
+	position: right;
+}
+.headerText {
+	text-align: center;
+	font-family:Monospace;
+}
+.centerAlignTextArticle{
+	width: 40%;
+	margin-left: 30%;
+	text-align: center;
+}
+#pictureRight {
+    display: block;
+    margin-left: 45%;
+   
+}
+#pictureLeft {
+	 display: block;
+     margin-left: 10%;
+}
+#footer{
+	height: 5%;
+	width:100%;
+	display: flex;
+	/*background-color: yellow;*/
+}
+#leftFooter{
+	width: 33.3333%;
+	text-align: center;
+	
+}
+#rightFooter{
+	width: 33.3333%;
+	text-align: center;
+	
+}
+#midleFooter{
+	width: 33.3333%;
+	text-align: center;
+}
