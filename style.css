@@ -40,7 +40,7 @@ html, body {
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    background-image: url("dummyBackground0.png");
+    background-image: url("../pictures/dummyBackground0.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -61,7 +61,61 @@ html, body {
 #topArticle{
 	height: 30%;
 	width:100%;
-	/*background-color: blue;*/
+	/*background-color: green;*/
+}
+#centerAlignTextArticleContainer{
+	width: 100%;
+	height: 40%;
+}
+.centerAlignTextArticle{
+	width: 40%;
+	margin-left: 30%;
+	text-align: center;
+}
+#topArticleContainer{
+	width: 100%;
+	height: 60%;
+	display: flex;
+}
+#topArticleLeft{
+	height: 100%;
+	width:50%;
+	/*background-color: green;*/
+}
+#topArticleLeftText{
+	height: 100%;
+	width:100%;
+	margin-left: 45%;
+	margin-right: 10%;
+	position:relative;
+	/*background-color: green;*/
+}
+#topArticleLeftTextContainer{
+	width:45%;
+	text-align: center;
+	position:absolute;
+	bottom:10%;
+	/*background-color: green;*/
+}
+#topArticleRight{
+	height: 100%;
+	width:50%;
+	/*background-color: green;*/
+}
+#topArticleRightText{
+	height: 100%;
+	width:100%;
+	margin-left: 10%;
+	margin-right: 45%;
+	position:relative;
+	/*background-color: green;*/
+}
+#topArticleRightTextContainer{
+	width:45%;
+	text-align: center;
+	position:absolute;
+	bottom:10%;
+	/*background-color: green;*/
 }
 #leftAndRigthArticle {
 	height: 70%;
@@ -70,27 +124,29 @@ html, body {
 }
 #leftArticle{
 	width:50%;
-	/*background-color: green;*/
 	position: left;
+	/*background-color: green;*/
 }
 #rightArticle{
 	flex: 1;
 	width:50%;
+	margin-right: 22%;
 	/*background-color: black;*/
 	position: right;
 }
 .headerText {
-	text-align: center;
+	text-align: left;
 	font-family:Monospace;
+	font-weight:bold;
 }
-.centerAlignTextArticle{
-	width: 40%;
-	margin-left: 30%;
-	text-align: center;
+#bullit {
+	text-align: left;
 }
+
 #pictureRight {
     display: block;
     margin-left: 45%;
+
    
 }
 #pictureLeft {
@@ -117,3 +173,117 @@ html, body {
 	width: 33.3333%;
 	text-align: center;
 }
+#leftUpload{
+	width: 25%;
+	height: 35%;
+	margin-left: 55%;
+	margin-top: 5%;
+	/*background-color: yellow;*/
+}
+#rightUpload{
+	width: 25%;
+	height: 35%;
+	margin-left: 20%;
+	margin-top: 5%;
+	/*background-color: yellow;*/
+}
+#labelFile1{
+	width: 100%;
+	height: 85%;
+	text-align: center;
+	border-radius: 5px;
+		display: inline-block;
+	vertical-align: middle;
+
+}
+#labelFile2{
+	width: 100%;
+	height: 85%;
+	text-align: center;
+	border-radius: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: #337ab7;
+        border-color: #2e6da4
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #2e6da4;
+        border-color: #2e6da4
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+#leftAndRigthArticleUpload {
+	height: 20%;
+	width:100%;
+	display: flex;
+	/*background-color: yellow;*/
+}
+#bottomUpload{
+	height: 40%;
+	width: 100%;
+	/*background-color: yellow;*/
+}
+#bottomUploadTop{
+	height: 50%;
+	width: 15%;
+	margin-left: 42.5%;
+	/*background-color: yellow;*/
+}
+#bottomUploadBottom{
+	height: 50%;
+	width: 20%;
+	margin-left: 40%;
+	/*background-color: yellow;*/
+}
+#dropdown{
+	width: 100%;
+	text-align: center;
+}
+#btn{
+ width: 100%;
+}
+.btn-group{
+ width: 100%;
+}
+.dropdown-menu {
+  width: 100%; 
+}
+#btn1{
+ width: 100%;
+}
+#form{
+	height: 100%;
+}
+#topArticleInserted{
+	height: 60%;
+}
+#backButtonDiv{
+	height: 20%;
+	width: 100%;
+}
+#backButton{
+	width: 25%;
+	margin-left: 37.5%;
+}
+
