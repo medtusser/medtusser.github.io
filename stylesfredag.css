@@ -16,20 +16,6 @@ h2 {
     text-align: center;
     color: #ccc;
 }
-h4{
-    font-family: candara,verdana,sans-serif;
-    font-size: 16pt;
-    text-align: center;
-    color: #ccc;
-    t
-}
-h3 {
-    font-family: candara,verdana,sans-serif;
-    font-size: 16pt;
-    text-align: center;
-    color: #ccc;
-    text-decoration: underline;
-}
 
 .yes {
     color: #5f5;
@@ -38,7 +24,13 @@ h3 {
 .no {
     color: #f55;
 }
-.click {
-    color: #F0FFFF;
+
+.hidden {
+    display: none;
 }
 
+.konami {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

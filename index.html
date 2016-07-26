@@ -3,17 +3,61 @@
 <head>
 <meta charset="utf-8">
 <title>Har Jens en lejlighed?</title>
-<link rel="stylesheet" type="text/css" href="stylesfredag.css" />
+<link rel="stylesheet" type="text/css" href="/stylesfredag.css" />
+<script type="text/javascript" src="konami-js/konami.js"></script>
+<script>
+function isitFriday() {
+    var d = new Date();
+    var elem = document.getElementById("answer");
+    if (d.getDay() == 5) {
+        elem.innerHTML = "Ja";
+        elem.className = "yes";
+    } else {
+        elem.innerHTML = "Nej";
+        elem.className = "no";
+    }
+}
+
+function yay() {
+    var container = document.getElementById("yay");
+    var d = new Date();
+    var img = document.createElement("img");
+    img.onload = function(e) {
+        container.appendChild(e.target);
+    }
+    if (d.getDay() != 8) {
+        img.setAttribute("src","herd2.png");
+        img.setAttribute("width","60%");
+    } else {
+        img.setAttribute("src","saddash.png");
+        img.setAttribute("width","30%");
+    }
+    img.className = "konami";
+}
+
+var easter_egg = new Konami(function() {yay();});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2022202-1']);
+      _gaq.push(['_trackPageview']);
+
+        (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                          })();
+
+</script>
 </head>
-<body>
+<body onLoad="isitFriday();">
 
 <h1>Har Jens en lejlighed?</h1>
 
-<h2 id="answer" class="no"> NEJ</h2>
+<h2 id="answer" class="no"></h2>
 
-<h4 id="answer"> Så i må gerne Hjælpe</h4>
-
-<a href="omMig.html"><h3 id="answer" class="click">Læs om ham her!</h3></a>
+<div id="yay"></div>
 
 </body>
 </html>
