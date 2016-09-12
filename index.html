@@ -7,9 +7,15 @@
 
 </head>
 <body id="example1">
-<audio controls>
+<audio controls id="audio1">
   <source src="Song/BlakNedeMette.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
+<script>
+var play = function() {
+    var audio1 = document.getElementById('Song/BlakNedeMette.mp3');
+    audio1.play(); // this stream will immediately stop when the next line is run on iOS
+}
+</script>
 </audio>
 <br>
 <br>
