@@ -1,15 +1,17 @@
-#example1 {
+body {
     background-image: url(schack.jpg);
     background-position: left top;
     background-repeat: no-repeat;
+    height: 100%;
+}
+audio {
+	height:100% !important;
 }
 #audio1 {
-	width:100% !important;
-       min-height: 30px;
+	height:100% !important;
        display:block;
 }
  #block {
-           height:100px;
-           width: 50px;
-           background: blue;
+           height:300px;
+           width: 100px;
         }
