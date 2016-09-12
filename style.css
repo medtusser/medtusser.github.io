@@ -8,3 +8,8 @@
        min-height: 30px;
        display:block;
 }
+ #block {
+           height:100px;
+           width: 50px;
+           background: blue;
+        }
