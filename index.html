@@ -11,6 +11,16 @@
   <source src="Song/BlakNedeMette.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84384528-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
 var play = function() {
     var audio1 = document.getElementById('Song/BlakNedeMette.mp3');
     audio1.play(); // this stream will immediately stop when the next line is run on iOS
@@ -26,12 +36,16 @@ var play = function() {
 <script src="js/ads.js"></script>
 
 <script>
-	 console.log("Adblock Active: ");
 	 if( window.canRunAds === undefined ){
         // adblocker detected, show fallback
-        console.log("True");
+        console.log("Adblock Active: True");
       }
-      else {console.log("False");}
+      else {console.log("Adblock Active: False");}
+</script>
+<script type="text/javascript" src="http://l2.io/ip.js?var=myip">´
+</script>
+<script>
+console.log("Ip adress: " + myip);
 </script>
 </html>
 
