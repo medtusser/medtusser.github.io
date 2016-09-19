@@ -23,5 +23,16 @@ var play = function() {
   <img border="0" src="download.jpg" width="104" height="142">
 
 </body>
+<script src="js/ads.js"></script>
+
+<script>
+	 console.log("Adblock Active: ");
+	 if( window.canRunAds === undefined ){
+        // adblocker detected, show fallback
+        console.log("True");
+      }
+      else {console.log("False");}
+</script>
 </html>
+
 
